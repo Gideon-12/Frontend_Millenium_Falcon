@@ -47,7 +47,7 @@ export const Card = () => {
         };
 
         fetch(
-            "http://45.56.114.13:5001/uploader", requestOptions)
+            "https://millenium-falcon.xyz/uploader", requestOptions)
             .then((response) => {
                 return response.json()
             })
