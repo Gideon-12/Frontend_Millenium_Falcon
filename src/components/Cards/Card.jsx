@@ -6,14 +6,14 @@ import Modal from 'react-modal';
 
 const customStyles = {
     content: {
-        top: '50%',
+        top: '53%',
         left: '50%',
         right: 'auto',
         bottom: 'auto',
         marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
-        height: '750px',
-        width: '500px',
+        height: '550px',
+        width: '380px',
         position: 'relative',
     },
 };
@@ -85,7 +85,7 @@ export const Card = () => {
                 ariaHideApp={false}
                 contentLabel="Result Model"
             >
-                <h2 className='txt'>Mission Details : </h2>
+                <h2 className='txt'>Mission Details </h2>
                 <h1 className='resultText'>Intercepted Data : </h1>
 
                 <pre className='interdata'>{JSON.stringify(bounty_data, null, 4)}</pre>
