@@ -21,7 +21,7 @@ const Navbars = (props) => {
 				</Nav>
 				<Nav>
 				    <Nav.Link style={{fontSize:'16px'}} href="/">Home</Nav.Link>
-					<Nav.Link style={{fontSize:'16px'}} href="https://loom.com/share/c2bc9739191a443fbf60dd8b5e5153e9" target="_blank">Tests</Nav.Link>
+					<Nav.Link style={{fontSize:'16px'}} href="https://www.loom.com/share/3c0d68e0e83245b0af3d6f3573597fd1" target="_blank">Tests</Nav.Link>
 					<Nav.Link style={{fontSize:'16px'}} href="https://github.com/Gideon-12/Frontend_Millenium_Falcon.git" target="_blank">Frontend Code</Nav.Link>
 					<Nav.Link style={{fontSize:'16px'}} href="https://github.com/Gideon-12/Backend_Millenium_Falcon-.git" target="_blank">Backend Code</Nav.Link>
 					<Nav.Link style={{fontSize:'16px'}} href="https://www.giskard.ai/" target="_blank">Giskard</Nav.Link>
