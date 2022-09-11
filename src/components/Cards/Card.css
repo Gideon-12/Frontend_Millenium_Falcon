@@ -79,7 +79,7 @@ label {
     
 }
 .modal{
-    background-color: rgba(255, 255, 255, .15);  
+    background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(10px);
     height: 700px;
     width: 200px;
@@ -92,8 +92,21 @@ label {
 }
 
 .interdata{
-    font-weight: bold;
-    font-size: 12px;
+    /* font-weight: bold; */
+    font-size: 20px;
+    line-height: 110%;
     color: #1D2671;
+    font-family: 'VT323', monospace, sans-serif;
+	color: #3f3;
+    min-height: 300px;
+    width: 100%;
+    padding: 0 60px;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+    white-space: nowrap;
 }
 
+.typed-cursor {
+    letter-spacing: -5.8px;
+}

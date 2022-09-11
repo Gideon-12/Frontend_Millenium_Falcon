@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useState } from 'react';
 import './Card.css';
 import Modal from 'react-modal';
+import ReactTyped from 'react-typed';
 
 
 const customStyles = {
@@ -12,7 +13,7 @@ const customStyles = {
         bottom: 'auto',
         marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
-        height: '550px',
+        height: '600px',
         width: '380px',
         position: 'relative',
     },
@@ -75,6 +76,11 @@ export const Card = () => {
         };
     }
 
+    const formated_data = useMemo(() => {
+        return JSON.stringify(bounty_data, null, 4).replaceAll(' ', '&nbsp;').replaceAll('\n', '<br/>')
+    }, [bounty_data])
+    console.log("formated_data", formated_data)
+
     return (
         <div className="card">
             <Modal
@@ -88,7 +94,14 @@ export const Card = () => {
                 <h2 className='txt'>Mission Details </h2>
                 <h1 className='resultText'>Intercepted Data : </h1>
 
-                <pre className='interdata'>{JSON.stringify(bounty_data, null, 4)}</pre>
+                <ReactTyped
+                    className='interdata'
+                    strings={[formated_data]}
+                    typeSpeed={20}
+                    cursorChar={'|||||||||||'}
+                    // autoInsertCss
+                />
+                {/* <pre className='interdata'>{JSON.stringify(bounty_data, null, 4)}</pre> */}
                 <div className='resultText'><span>Odds:&nbsp;&nbsp;</span><span className='num'>{data}%</span></div>
                 <button onClick={closeModal} className="closeButton">close</button>
 
